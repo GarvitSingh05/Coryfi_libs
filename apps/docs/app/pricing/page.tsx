@@ -132,7 +132,7 @@ export default function EnhancedPricingPage() {
       <main className="pt-16" style={getGradientStyle()}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.h1 
-            className="text-5xl font-extrabold text-center mb-6 text-gray-800"
+            className="text-3xl md:text-5xl  font-bold text-center mb-6 text-gray-800"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
