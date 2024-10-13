@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>page</div>
+    <div className='flex justify-center text-3xl'>page</div>
   )
 }
 

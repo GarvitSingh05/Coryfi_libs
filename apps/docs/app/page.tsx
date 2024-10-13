@@ -5,10 +5,13 @@ import Header from "../components/ui/Header";
 import { HeroParallax } from "../components/HeroParallax";
 import ClientForm from "../components/ClientForm";
 import Hero from "../components/Hero";
+import { Toaster } from "docs/@/components/ui/toaster";
 
 export default function ModernHomePage() {
+
   return (
     <div className="min-h-screen flex flex-col">
+   
       <div className="fixed inset-0 z-[-1] bg-gradient-to-r from-purple-300 via-blue-300 to-blue-400 animate-gradient-x"></div>
 
       <Header />
