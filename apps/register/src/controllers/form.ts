@@ -24,7 +24,7 @@ export const signup = async (req: any, res: any) => {
             name
         }
       })
-      res.json({
+      res.status(200).json({
         name,
         email
       });
