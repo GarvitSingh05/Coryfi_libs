@@ -8,6 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "prettier": "^3.2.5",
@@ -25,7 +26,6 @@
     "packages/*"
   ],
   "dependencies": {
-    "@types/cors": "^2.8.17",
     "cors": "^2.8.5"
   }
 }
