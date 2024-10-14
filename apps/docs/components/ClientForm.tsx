@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HammerAnimation } from './HeroAnimation'
@@ -20,10 +21,12 @@ function ClientForm() {
     setIsSubmitting(true)
     setError(null)
     try {
-      const response = await axios.post("https://your-api-endpoint.com/register", {
+      
+      const response = await axios.post(process.env.NEXT_PUBLIC_REGISTER_URL || "", {
         name,
         email
       })
+      console.log("here is the url",process.env.NEXT_PUBLIC_REGISTER_URL)
       if (response.status === 200) {
         setRegistered(true)
         setName("")
@@ -66,6 +69,7 @@ function ClientForm() {
               />
             </div>
             <div>
+
               <Label htmlFor="email" className="sr-only">Email</Label>
               <Input
                 id="email"
@@ -121,6 +125,9 @@ function ClientForm() {
           </div>
         </div>
         <div>
+          <div>
+
+          </div>
           <Footer />
         </div>
       </motion.section>
