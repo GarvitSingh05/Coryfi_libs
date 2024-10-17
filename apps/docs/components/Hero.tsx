@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="w-full flex justify-center"
           >
-             <button className="flex justify-center bg-blue-500 hover:bg-blue-600 text-white w-full md:w-1/6  px-1 py-3 rounded-xl  text-lg  font-sans font-semibold transition-colors duration-200">
+             <button onClick={()=>window.location.href="http://16.171.24.158:3000/feed"} className="flex justify-center bg-blue-500 hover:bg-blue-600 text-white w-full md:w-1/6  px-1 py-3 rounded-xl  text-lg  font-sans font-semibold transition-colors duration-200">
       Try Now
     </button>
           </motion.div>
